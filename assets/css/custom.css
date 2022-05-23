@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans&display=swap');
+@font-face {
+    font-family: 'Graphik';
+    src: url('assets/fonts/GraphikRegular.otf');
+  }
+body{
+    background: #19191B;
+}
+a.navbar-brand{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+a.nav-link{
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.7);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.btn-contact-us{
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.500211px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+}
+li.active a{
+    font-weight: 600;
+    letter-spacing: -0.500211px;
+    color: #5454D4;
+    order: 0;
+}
+h1{    
+    font-family: 'Graphik', sans-serif !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 84px;
+    color: #FFFFFF;
+}
+p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 39px;
+    letter-spacing: -0.656526px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.btn-out-services{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background: #5454D4;
+    border-radius: 4px;
+}
+h2{    
+    font-family: 'Graphik', sans-serif !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+.icon-service{
+    margin: auto;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.icon-bg-blue{
+    background: rgba(84, 84, 212, 0.7);
+}
+.icon-bg-red{
+    background: rgba(240, 64, 55, 0.7);
+}
+.icon-bg-yellow{
+    background: rgba(254, 220, 90, 0.7);
+}
+.icon-service img{
+    position: relative;
+    left: 12px;
+    top: 10px;
+}
+.section-4 h3{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.750316px;
+    color: #FFFFFF;
+}
+.section-4 p{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.500211px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.box-header{
+    margin-top: 100px;
+}
+.img-header-profile{
+    height: 500px;
+    margin-top: 50px;
+}
+.section-2{
+    margin-top: 100px;
+}
+.section-3{
+    margin-top: 100px;
+}
+.section-4{
+    margin-bottom: 100px;
+}
+.section-5{
+    margin: 100px 0;
+}
+p.copyright{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 38px;
+    /* identical to box height, or 238% */
+
+    text-align: right;
+    letter-spacing: -0.500211px;
+
+    color: rgba(255, 255, 255, 0.7);
+}
