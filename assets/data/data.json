@@ -1,0 +1,50 @@
+[
+    {
+        "date": "7 Juli 2022", 
+        "sales_toko_a": 350, 
+        "sales_toko_b": 200, 
+        "sales_toko_c": 100 
+    },
+    {
+        "date": "8 Juli 2022", 
+        "sales_toko_a": 200, 
+        "sales_toko_b": 150, 
+        "sales_toko_c": 400 
+    },
+    {
+        "date": "9 Juli 2022", 
+        "sales_toko_a": 300, 
+        "sales_toko_b": 550, 
+        "sales_toko_c": 100 
+    },
+    {
+        "date": "10 Juli 2022", 
+        "sales_toko_a": 260, 
+        "sales_toko_b": 130, 
+        "sales_toko_c": 50 
+    },
+    {
+        "date": "11 Juli 2022", 
+        "sales_toko_a": 100, 
+        "sales_toko_b": 400, 
+        "sales_toko_c": 230 
+    },
+    {
+        "date": "12 Juli 2022", 
+        "sales_toko_a": 260, 
+        "sales_toko_b": 160, 
+        "sales_toko_c": 390 
+    },
+    {
+        "date": "13 Juli 2022", 
+        "sales_toko_a": 400, 
+        "sales_toko_b": 200, 
+        "sales_toko_c": 100 
+    },
+    {
+        "date": "14 Juli 2022", 
+        "sales_toko_a": 300, 
+        "sales_toko_b": 580, 
+        "sales_toko_c": 130 
+    }
+]        
