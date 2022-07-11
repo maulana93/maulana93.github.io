@@ -30,19 +30,19 @@
     <div class="container">
         <nav class="navbar navbar-light bg-white">
         <a class="navbar-brand" href="#">
-            <img src="https://www.family.co.jp/content/dam/img/english/logo/logo_fm.png" class="img-fluid">
+            <img src="assets/images/logo_fm.png" class="img-fluid">
         </a>
         </nav>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="https://www.family.co.jp/content/dam/family/english/home/img/home_p01_02.jpg" class="d-block w-100" alt="...">
+                <img src="assets/images/home_p01_02.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img src="https://www.family.co.jp/content/dam/family/english/home/img/home_p01_01.jpg" class="d-block w-100" alt="...">
+                <img src="assets/images/home_p01_01.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img src="https://www.family.co.jp/content/dam/family/english/home/img/home_p01_04.jpg" class="d-block w-100" alt="...">
+                <img src="assets/images/home_p01_04.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
@@ -58,7 +58,7 @@
         <h2 class="text-center mt-5">Tentang Kami</h2>
         <div class="row mt-5">
           <div class="col-12 col-lg-6">
-            <img src="http://fmi.familymartindonesia.com/FMIRecruitment/dist/image/fmjapan.jpg" class="img-fluid mb-3">
+            <img src="assets/images/fmjapan.jpg" class="img-fluid mb-3">
           </div>
           <div class="col-12 col-lg-6">        
             <p style="font-size: 20px;">FamilyMart, pertama kali berdiri tahun 1970, sebagai toko yang dibangun di area tersendiri dan dirancang sebagai toko percontohan modern dengan konsep dan format retail baru, yaitu Convenience Store. Pemilihan dan penggunaan nama "FamilyMart" sebagai bentuk perwujudan ide "Hubungan Kekeluargaan" dan "Maju & Berkembang Bersama".</p>
