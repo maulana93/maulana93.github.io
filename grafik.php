@@ -23,7 +23,7 @@
         am4core.options.autoDispose = true;
 
         // Set up data source
-        chart.dataSource.url = window.location+"assets/data/data.json";
+        chart.dataSource.url = "assets/data/data.json";
 
         // Create axes
         var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
