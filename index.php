@@ -13,7 +13,7 @@
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
 
     <!-- Resources -->
-    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
     <script src="//www.amcharts.com/lib/4/core.js"></script>
     <script src="//www.amcharts.com/lib/4/charts.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
@@ -73,5 +73,42 @@
         &copy; FamilyMart 2022
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAXK4Orxl2CghIQvKiUPtkhEngSgzteqE0",
+        authDomain: "hello-world-pwa-8669c.firebaseapp.com",
+        databaseURL: "https://hello-world-pwa-8669c.firebaseio.com",
+        projectId: "hello-world-pwa-8669c",
+        storageBucket: "hello-world-pwa-8669c.appspot.com",
+        messagingSenderId: "660239288739"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/serviceworker.js')
+          .then(function() {
+                console.log('Service Worker Registered');
+          });
+      }
+    </script>
+    <script>
+      const messaging = firebase.messaging();
+
+      messaging.requestPermission()
+      .then(function() {
+        console.log('Notification permission granted.');
+        return messaging.getToken();
+      })
+      .then(function(token) {
+        console.log(token);
+      })
+      .catch(function(err) {
+        console.log('Unable to get permission to notify.', err);
+      })
+    </script>
   </body>
 </html>
