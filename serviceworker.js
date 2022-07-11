@@ -1,18 +1,16 @@
 var CACHE_NAME = 'my-site-cache-v1';
-var urlsToCache = [
-    '/',  
-    '/assets/images/logo-192.png',  
-    '/assets/images/logo-512.png',  
-    '/assets/images/favicon.ico',  
-    '/assets/main.js'
-];
-
 
 self.addEventListener('install', function(event) {
     event.waitUntil(
       caches.open(CACHE_NAME).then(function(cache) {
         console.log('in install serviceworker...')
-        return cache.addAll(urlsToCache);
+        return cache.addAll([
+          '/',  
+          '/assets/images/logo-192.png',  
+          '/assets/images/logo-512.png',  
+          '/assets/images/favicon.ico',  
+          '/assets/main.js'
+        ]);
       })
     );
   });
