@@ -20,6 +20,7 @@
 
         // Create chart instance
         var chart = am4core.create("chartdiv", am4charts.XYChart);
+        am4core.options.autoDispose = true;
 
         // Set up data source
         chart.dataSource.url = window.location+"assets/data/data.json";
