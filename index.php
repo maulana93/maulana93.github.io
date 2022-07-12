@@ -91,7 +91,7 @@
 
             function init() {
                 if ('serviceWorker' in navigator && navigator.onLine) {
-                    navigator.serviceWorker.register( BASE_URL + 'service-worker.js')
+                    navigator.serviceWorker.register( BASE_URL + 'serviceworker.js')
                     .then((reg) => {
                         console.log('Registrasi service worker Berhasil', reg);
                     }, (err) => {
