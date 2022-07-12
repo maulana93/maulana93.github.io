@@ -4,6 +4,18 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Description" content="FamilyMart" />
+    <!-- Mendeklarasikan warna yang muncul pada address bar Chrome versi seluler -->
+    <meta name="theme-color" content="#414f57" />
+    <!-- Mendeklarasikan ikon untuk iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FamilyMart" />
+    <link rel="shortcut icon" href="/assets/images/logo-192.png" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/images/logo-192.png" type="image/png">
+    <!-- Mendeklarasikan ikon untuk Windows -->
+    <meta name="msapplication-TileImage" content="/assets/images/logo-192.png" />
+    <meta name="msapplication-TileColor" content="#000000" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -13,7 +25,6 @@
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
 
     <!-- Resources -->
-    <!-- <script src="assets/js/main.js"></script> -->
     <script src="//www.amcharts.com/lib/4/core.js"></script>
     <script src="//www.amcharts.com/lib/4/charts.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
@@ -74,41 +85,20 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
     <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyAXK4Orxl2CghIQvKiUPtkhEngSgzteqE0",
-        authDomain: "hello-world-pwa-8669c.firebaseapp.com",
-        databaseURL: "https://hello-world-pwa-8669c.firebaseio.com",
-        projectId: "hello-world-pwa-8669c",
-        storageBucket: "hello-world-pwa-8669c.appspot.com",
-        messagingSenderId: "660239288739"
-      };
-      firebase.initializeApp(config);
-    </script>
-    <script>
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/serviceworker.js')
-          .then(function() {
-                console.log('Service Worker Registered');
-          });
-      }
-    </script>
-    <script>
-      const messaging = firebase.messaging();
+            var BASE_URL = '<?= base_url() ?>';
+            document.addEventListener('DOMContentLoaded', init, false);
 
-      messaging.requestPermission()
-      .then(function() {
-        console.log('Notification permission granted.');
-        return messaging.getToken();
-      })
-      .then(function(token) {
-        console.log(token);
-      })
-      .catch(function(err) {
-        console.log('Unable to get permission to notify.', err);
-      })
-    </script>
+            function init() {
+                if ('serviceWorker' in navigator && navigator.onLine) {
+                    navigator.serviceWorker.register( BASE_URL + 'service-worker.js')
+                    .then((reg) => {
+                        console.log('Registrasi service worker Berhasil', reg);
+                    }, (err) => {
+                        console.error('Registrasi service worker Gagal', err);
+                    });
+                }
+            }
+</script>
   </body>
 </html>
